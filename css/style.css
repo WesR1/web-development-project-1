@@ -1,3 +1,394 @@
-body {background-color: rgb(176, 230, 176);}
-h1   {color: blue;}
-p    {color: red;}
+html, body { 
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+}
+html{
+    box-sizing: border-box;
+}
+*, *::before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+h1   {
+    margin: auto; 
+    margin-top: 20px;
+    font-size: 50px;
+    background-color: rgb(14, 150, 121);
+    color: rgb(255, 255, 255);
+    word-spacing: 10px;
+    border: 3px solid rgb(255, 255, 255);
+    width: fit-content;
+    border-radius: 1.5%;
+    background-color: rgb(14, 150, 121);
+}
+h2 {
+    background-color: rgb(14, 150, 121);;
+    color: rgb(255, 255, 255);
+    border-radius: 1.5%;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    word-spacing: 5px;
+    border: 2.5px solid white;
+    transition: 1.5s;
+    width: auto;
+}
+h3 {
+  color: white;
+  background-color: black;
+  margin: auto;
+}
+
+
+button {
+padding: 10px;
+margin-top: 10px;
+width: 100%;
+color: white;
+background-color: rgb(92, 180, 72);
+border: none;
+border-radius: 4px;
+}
+
+button:active {
+    color: rgb(36, 75, 174);
+    text-align: center;
+    border: 15px solid black;
+    transform: translateY(5px);
+    transition: background-color 4s ease;
+}
+button:hover {
+    background-color: rgb(11, 19, 255); 
+    color: rgb(36, 31, 42); 
+    text-decoration: underline; 
+    transition: 1.5s; 
+    text-align: center;
+    animation-name: colorswaps;
+    animation-duration: infinite;
+    animation-direction: reverse;
+}
+
+button.indexbutton
+{
+    margin: 100px;
+    background-color: rgb(10, 66, 178);
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 5px
+}
+button.indexbutton:hover {
+    color: black;
+    background-color: white;
+
+
+}
+.area1 { 
+    text-align: center;
+    width: 300px;
+    padding: 50px;
+    margin: 30px;
+}
+.p2 {  
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 100px;
+    height: 80px;
+    position: relative;
+    background-color: aliceblue;
+    color: rgb(5, 54, 213);
+    text-align: center;
+    padding: 20px;
+    word-spacing: 2px;
+    margin: 50px;
+    margin-left: 550px;
+}
+.p3 {
+    text-align: center;
+    padding: 5px 10px; 
+    background-color: rgb(7, 107, 85);
+    color:rgb(255, 255, 255);
+    border: 5px solid white;
+}
+.pcontact {
+    text-align: center; 
+    background-color: rgb(14, 150, 121);
+    color:rgb(4, 45, 247)
+}
+.submit{
+    text-align: center;
+    color:aliceblue
+}
+li {
+    text-align: center;
+    padding: 5px 10px;
+    color:aliceblue
+}
+.hoverbar a {
+    float: left;
+    background-color: azure;
+    display: block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18.5px;
+    border: 1.5px solid rgb(65, 141, 106);
+}
+.hoverbar a:hover {
+    animation-name: colorswaps;
+    animation-duration: infinite;
+    background-repeat: repeat;
+    animation-iteration-count: 10;
+    color:navy;
+    background-color: rgb(51, 110, 51);
+    text-decoration: underline;
+    transition: 1s; font-size: 30px;
+}
+.hoverbar a:active {
+    animation-iteration-count: 10;
+    animation-duration: 3.5s;
+    font-size: 20px;
+    color:rgb(13, 48, 223);
+    padding: 5px 10px; 
+    background-color: black;
+}
+.activebar a {
+    border: solid white;
+    margin: 15px 15px;
+    font-size: 20px;
+    color:rgb(2, 45, 137);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1s; font-size: 2px for 1s color;
+    padding: 5px 10px; 
+    background-color: rgb(59, 128, 83);
+}
+
+.activebar a:hover {
+    border: solid white;
+    animation-name: colorswaps;
+    animation-duration: infinite;
+    background-repeat: repeat;
+    animation-iteration-count: 10;
+    font-size: 15px;
+    color:rgb(0, 255, 242);
+    background-color: rgb(18, 20, 104);
+    text-decoration: underline;
+    transition: 1s; margin: 3px; font-size: 30px;
+}
+.registrationbody {
+    background: linear-gradient(to right, black, white, green,);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#frm1 {
+    width: 300px;
+    text-align: center;
+    padding: 25px;
+    margin: 15vh auto 0 auto;
+    background-color: rgb(37, 140, 203);
+    border-radius: 3px;
+    font-size: 15px;
+}
+#frm1 h1 {
+    background: none;
+    border-radius: 15px;
+    border: none;
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+#frm1 button {
+    width: 130px;
+    padding: 15px;
+    text-align: center;
+    margin: 100px;
+    color: white;
+    background-color:rgb(0, 57, 164);
+    border: none;
+    border-radius: 4px;
+}
+#frm1 button:hover{
+    background-color: rgb(28, 171, 44); 
+    color: rgb(255, 255, 255); 
+    text-decoration: underline; 
+    transition: 1.5s; 
+    text-align: center;
+    animation-name: colorswaps;
+    animation-duration: infinite;
+    animation-direction: reverse;
+}
+.input-control{
+    display: flex;
+    flex-direction: column;
+}
+.input {
+    background-color: white;
+    padding: 5px;
+}
+.input[type="submit"]{
+    background-color: dodgerblue;
+    color: white;
+}
+
+.input-control input {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control .success input {
+    border-color: rgb(70, 183, 74);
+}
+
+.input-control .errors input {
+    border-color: rgb(190, 84, 57);
+}
+.errors {
+    color: red;
+}
+
+.errors input {
+    border-color: rgb(190, 84, 57);
+}
+
+.input-control .errors {
+    border-color: rgb(190, 84, 57);
+    font-size: 9px;
+    height: 13px;
+}
+
+.Scolumns {
+    float:left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.employeecards {
+    box-shadow: 0 10px 12px 0 rgb(0, 0, 0.2);
+    margin: auto;
+    margin-bottom: 25px;
+    width: fit-content;
+    border: 5px solid white;
+    background-color: rgb(14, 150, 121);
+
+}
+
+.about-section-header-1 {
+    padding: 0px;
+    text-align: center;
+
+}
+
+.container {
+    padding: 0 16px;
+}
+.Rows {
+    width: fit-content;
+    margin: auto;
+}
+
+.container::after,.Rows::after{
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+.abouttitle {
+    color:rgb(255, 255, 255);
+    background-color: rgb(14, 150, 121);
+}
+
+.aboutcontact {
+    cursor: pointer;
+    width: 100%;
+    outline:rgb(0, 0, 0);
+    border: none;
+    display: inline-block;
+    padding: 9px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.aboutcontact:hover {
+    background-color: #547; 
+    color: white;
+}
+
+@media screen and (max-width: 650px)
+{ .Scolumns {
+    width: 100%;
+    display: block;}
+}
+
+.aboutpara {
+    color: white;
+    background-color: rgb(14, 150, 121);
+}
+.aboutpara1 {
+    color: black;
+    background-color: white;
+    outline-color: black;
+    outline:5px;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    margin-top: 19px;
+    margin-bottom: 19px;
+    padding: 10px;
+    border: 5px black;
+}
+.about-section-header-1 {
+    width: auto;
+}
+
+.footer_homepage {
+    margin-top: 25px;
+    text-align: center;
+    background: darkslategray;
+    position: absolute; bottom: 0;
+    width: 100%;
+    border:5px solid white;
+    border-radius: 5%;
+    margin: auto;
+}
+.home_main_p {
+    background-color: rgb(14, 150, 121);
+    width: fit-content;
+    box-shadow: 10px solid black;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    border: 5px solid rgb(255, 255, 255);
+    margin: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 2px;
+    color: white;
+
+}
+.content_main_p {
+    background-color: rgb(14, 150, 121);
+    width: fit-content;
+    text-align: center;
+    margin:auto;
+    color: white;
+    border: 5px solid white;
+    padding: 5px;
+    font-size: 18.5px;
+    word-spacing: 2.5px;
+}
