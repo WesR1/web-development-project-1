@@ -19,13 +19,12 @@ h1   {
     margin: auto; 
     margin-top: 20px;
     font-size: 50px;
-    background-color: rgb(14, 150, 121);
+    background-color: rgb(7, 105, 56);
     color: rgb(255, 255, 255);
     word-spacing: 10px;
     border: 3px solid rgb(255, 255, 255);
     width: fit-content;
     border-radius: 1.5%;
-    background-color: rgb(14, 150, 121);
 }
 h2 {
     background-color: rgb(14, 150, 121);;
@@ -391,4 +390,25 @@ li {
     padding: 5px;
     font-size: 18.5px;
     word-spacing: 2.5px;
+}
+.home_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.home_side {
+    flex: 30%;
+    background-color: #106b52;
+    padding: 20px;
+    margin:auto;
+    width: fit-content;
+    border: 3px solid white;
+    color: white;
+}
+.home_main {
+    flex: 70%;
+    background-color: #17a47f;
+    padding: 20px;
+    width: fit-content;
+    border: 3px solid white;
+    color:white;
 }
